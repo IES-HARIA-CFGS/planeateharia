@@ -9,4 +9,3 @@ Este proyecto es el **sitio web educativo** oficial del **IES Haria**, diseñado
 - **Noticias:** Notificaciones del centro y de las distintas actividades que se organizan espontáneamente.
 - **Contacto:** Detalles para ponerse en contacto directamente con el centro y con personas especializadas en mantenerte en línea.
 
-!(imagen ies haría)(https://images.homify.com/image/upload/a_0,c_fit,f_auto,q_auto,w_1108/v1508406870/p/photo/image/2279390/IES_Haria2.jpg)
