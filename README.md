@@ -1,3 +1,5 @@
+![Imagen IESHARIA](https://live.staticflickr.com/65535/52047446386_f17bc0ab41_b.jpg)
+
 # **IES Haria - Sitio Web Escolar de Informática**
 
 Este proyecto es el **sitio web educativo** oficial del **IES Haria**, diseñado para ofrecer recursos, materiales y información para los estudiantes de informática.
