@@ -1,0 +1,63 @@
+main{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    max-width: 1200px;
+    font-size: var(--texto-header);
+    font-family: var(--fuente-titulos);
+    margin: 50px auto 25px auto;
+}
+.Competiciones{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 15px;
+}
+
+h2{
+    width: 100%;
+    font-size: 1.1em;
+    font-family: var(--fuente-titulos);
+    margin: 0px auto 15px auto;
+}
+
+.tarjeta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+img{
+    height: 50px;
+    width: 80px
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ali
+}
+
+h3{
+    width: 100%;
+    font-size: 1em;
+    font-family: var(--fuente-titulos);
+    margin: 0px auto 15px auto;
+}
+
+p{
+    width: 100%;
+
+}

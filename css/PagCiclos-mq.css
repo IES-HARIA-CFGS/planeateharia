@@ -1,0 +1,29 @@
+@media screen and (max-width: 920px) {
+    h1 {
+        font-size: 30px;
+    }
+    .title-p {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    
+}
+
+@media screen and (max-width: 729px) {
+    
+    
+
+    .title-p {
+        margin-top: 150px;
+    }
+    
+
+    .flip-card {
+        min-width: 370px;
+        max-height: 100px;
+    }
+    .content-details {
+        position: relative;
+    }
+}
