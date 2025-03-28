@@ -36,29 +36,3 @@
     padding: var(--spacing-p);
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-image img,
-  .details-card,
-  .details-card summary,
-  .details-card .content,
-  .content li {
-    transition: none;
-    animation: none;
-    transform: none;
-  }
-
-  .details-card[open] .content li {
-    transition-delay: 0s;
-  }
-}
-
-@media (prefers-contrast: high) {
-  .overlay {
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-  .details-card {
-    border: 2px solid var(--color-header-background);
-  }
-}
