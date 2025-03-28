@@ -39,24 +39,3 @@
     font-size: 1.5rem;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-@media (prefers-contrast: high) {
-  .overlay {
-    background: rgba(73, 73, 73, 0.9);
-  }
-
-  .card {
-    border: 2px solid var(--color-header-background);
-  }
-}
