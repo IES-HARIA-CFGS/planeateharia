@@ -4,18 +4,25 @@
 
 ### -- HTML --
 - **index.html** → Página principal del proyecto.
-- **PagCicloB.html** → Página del ciclo básico.
-- **PagCicloM.html** → Página del ciclo medio.
-- **PagCicloS.html** → Página del ciclo superior.
+- **CFGB.html** → Página del ciclo básico.
+- **CFGM.html** → Página del ciclo medio.
+- **CFGS.html** → Página del ciclo superior.
+- **proyectos.html** → Página de los proyectos.
 
 
 ### -- CSS --
-- **variablesYreset** → Reset de márgenes, padding y bordes. Junto a las variables de la estructura del proyecto que asignarán valores a cada elemento.
-- **global** → Asignación de valores que afectan a todos los HTML.
-- **header** → Cambios específicos que afectarán al header que se verá en todos los HTML.
-- **footer** → Cambios específicos que afectarán al footer que se verá en todos los HTML.
+- **variablesYreset** → Reseteo de márgenes, padding y bordes. Junto a las variables de la estructura del proyecto que asignarán valores a cada elemento.
+- **global** → Asignación/Importaciones de valores que afectan a todos los HTML.
+- **header** → Cambios específicos que afectarán al 'header' que se verá en todos los HTML.
+- **header-media-queries** → Cambios sobre el 'header' para adaptaciones sobre distintos tamaños de pantalla.
+- **footer** → Cambios específicos que afectarán al 'footer' que se verá en todos los HTML.
+- **footer-media-queries** → Cambios sobre el 'footer' para adaptaciones sobre distintos tamaños de pantalla.
 - **pagPrincipal** → Afecta a la estructura principal del proyecto (`index.html`).
-- **pagCiclos** → Afecta a la estructura de todas las páginas de los Ciclos del proyecto (`PagCicloB.html`, `PagCicloM.html` y `PagCicloS.html`).
+- **pagPrincipal-media-queries** → Cambios sobre el 'pagPrincipal' para adaptaciones sobre distintos tamaños de pantalla.
+- **pagCiclos** → Afecta a la estructura de todas las páginas de los 'Ciclos' del proyecto (`CFGB.html`, `CFGM.html` y `CFGS.html`).
+- **pagCiclos-media-queries** Cambios sobre el 'pagCiclos' para adaptaciones sobre distintos tamaños de pantalla.
+- **pagProyectos** → Afecta a la estructura principal del proyecto (`proyectos.html`).
+- **pagProyectos-media-queries** Cambios sobre el 'pagProyectos' para adaptaciones sobre distintos tamaños de pantalla.
 
 
 ### -- ROLES --
