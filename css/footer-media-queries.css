@@ -65,4 +65,13 @@
     .f-div-2 > nav {
         gap: 20px;
     }
+    
+    .hid-firm {
+        display: none;
+    }
+
+    .vemos-firma {
+        display: block;
+        margin-top: 10px;
+    }
 }
