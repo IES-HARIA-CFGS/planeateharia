@@ -1,5 +1,5 @@
-@media (max-width: 920px) {
-    footer {
+@media (max-width: 968px) {
+    .footer-principal {
         display: grid;
         grid-template-rows: 400px repeat(2);
         grid-template-columns: 1fr repeat(2);
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 600px) {
-    footer {
+    .footer-principal {
         display: grid;
         grid-template-rows: 400px repeat(2);
         grid-template-columns: 1fr repeat(2);
