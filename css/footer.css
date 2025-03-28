@@ -1,14 +1,19 @@
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-footer-background);
   color: var(--color-secondary);
-  padding: clamp(30px, 5vw, 50px) clamp(20px, 3vw, 40px);
+  font-size: var(--texto-footer);
+  font-family: var(--fuente-principal);
+}
+
+.footer-principal  {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: clamp(30px, 5vw, 20px) clamp(20px, 3vw, 40px);
   gap: 40px;
   justify-content: space-evenly;
-  font-size: var(--texto-footer);
-  font-family: var(--fuente-principal);
   margin-top: auto;
 }
 
@@ -35,7 +40,7 @@ footer a:hover {
 }
 
 /* divs del footer */
-footer > div {
+.footer-principal > div {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -43,7 +48,7 @@ footer > div {
 }
 
 /* mapa */
-footer > div > iframe {
+.footer-principal > div > iframe {
   height: clamp(150px, 30vw, 150px);
   width: 100%;
   border-radius: 8px;
@@ -71,7 +76,7 @@ footer ul {
   gap: 20px;
 }
 
-footer > div > nav {
+.footer-principal > div > nav {
   display: flex;
   height: 100%;
   flex-direction: column;
