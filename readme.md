@@ -1,14 +1,14 @@
 ## Explicación de la estructura del proyecto
 
 
-
+<br>
 ### -- HTML --
 - **index.html** → Página principal del proyecto.
 - **PagCicloB.html** → Página del ciclo básico.
 - **PagCicloM.html** → Página del ciclo medio.
 - **PagCicloS.html** → Página del ciclo superior.
 
-
+<br>
 ### -- CSS --
 - **variablesYreset** → Reset de márgenes, padding y bordes. Junto a las variables de la estructura del proyecto que asignarán valores a cada elemento.
 - **global** → Asignación de valores que afectan a todos los HTML.
@@ -17,7 +17,7 @@
 - **pagPrincipal** → Afecta a la estructura principal del proyecto (`index.html`).
 - **pagCiclos** → Afecta a la estructura de todas las páginas de los Ciclos del proyecto (`PagCicloB.html`, `PagCicloM.html` y `PagCicloS.html`).
 
-
+<br>
 ### -- ROLES --
 
   #### Coordinador
