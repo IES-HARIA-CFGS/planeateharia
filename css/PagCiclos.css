@@ -1,0 +1,224 @@
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-top: 60px;
+  font-family: var(--fuente-principal);
+}
+
+main h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+}
+
+.hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-mg);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+  transform: scale(1.1);
+  transition: transform var(--transition-normal);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.hero h1 {
+  color: var(--color-secondary);
+  font-size: clamp(2rem, 8vw, 6rem);
+  text-align: center;
+  padding: 0 var(--spacing-p);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp var(--transition-normal) forwards;
+}
+
+.description {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-g);
+  text-align: center;
+  font-size: var(--texto-header);
+  color: var(--color-header-background);
+  animation: fadeIn var(--transition-normal);
+}
+
+.details-section {
+  max-width: 1200px;
+  margin: var(--spacing-mg) auto;
+  padding: 0 var(--spacing-p);
+}
+
+.details-card {
+  background: var(--color-secondary);
+  margin-bottom: var(--spacing-p);
+  border-radius: var(--border-radius-m);
+  box-shadow: var(--box-shadow-default);
+  transform-origin: top;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.details-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.details-card summary {
+  position: relative;
+  padding: var(--spacing-g);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: var(--texto-header);
+  color: var(--color-header-background);
+  list-style: none;
+  transition: all var(--transition-normal);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-p);
+}
+
+.details-card summary:hover {
+  background-color: rgba(255, 119, 119, 0.1);
+  color: var(--color-header-text-hover);
+  padding-left: calc(var(--spacing-g) + 4px);
+}
+
+.details-card summary::after {
+  content: "+";
+  position: absolute;
+  right: var(--spacing-g);
+  transition: all var(--transition-normal);
+  font-size: 1.5em;
+  opacity: 0.7;
+  transform-origin: center;
+}
+
+.details-card[open] summary {
+  background-color: rgba(255, 119, 119, 0.05);
+  margin-bottom: 1px;
+}
+
+.details-card[open] summary::after {
+  transform: rotate(45deg);
+  opacity: 1;
+  color: var(--color-header-text-hover);
+}
+
+.details-card[open] {
+  animation: expandCard var(--transition-normal) ease-out;
+}
+
+.details-card .content {
+  padding: 0;
+  max-height: 0;
+  opacity: 0;
+  border-top: 0px solid rgba(73, 73, 73, 0.1);
+  transition: all var(--transition-normal);
+  transform: translateY(-20%);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.details-card[open] .content {
+  padding: var(--spacing-g);
+  max-height: 1200px;
+  opacity: 1;
+  border-top: 1px solid rgba(73, 73, 73, 0.1);
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.content ul {
+  list-style-position: inside;
+  margin: var(--spacing-p) 0;
+}
+
+.content li {
+  margin-bottom: var(--spacing-mp);
+  padding-left: var(--spacing-p);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all var(--transition-despacio);
+}
+
+.details-card[open] .content li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.details-card[open] .content li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.details-card[open] .content li:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.details-card[open] .content li:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.details-card[open] .content li:nth-child(4) {
+  transition-delay: 0.5s;
+}
+.details-card[open] .content li:nth-child(5) {
+  transition-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes expandCard {
+  0% {
+    transform: scaleY(0.95) translateY(0);
+  }
+  50% {
+    transform: scaleY(1.02) translateY(-2px);
+  }
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
