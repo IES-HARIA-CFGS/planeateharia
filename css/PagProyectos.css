@@ -27,7 +27,6 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: -1;
-  will-change: transform;
 }
 
 .hero-image img {
@@ -112,8 +111,7 @@ h3 {
   border-radius: var(--border-radius-m);
   overflow: hidden;
   box-shadow: var(--box-shadow-default);
-  transition: transform var(--transition-normal),
-    box-shadow var(--transition-normal);
+  transition: all var(--transition-normal);
   animation: fadeIn var(--transition-normal) ease-out forwards;
 }
 
@@ -177,9 +175,11 @@ h3 {
 .card:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .card:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .card:nth-child(3) {
   animation-delay: 0.3s;
 }

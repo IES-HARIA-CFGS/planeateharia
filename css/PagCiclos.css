@@ -57,6 +57,7 @@ h3 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp var(--transition-normal) forwards;
+  animation-delay: 0.2s;
 }
 
 .description {
@@ -123,7 +124,6 @@ h3 {
 
 .details-card[open] summary {
   background-color: rgba(255, 119, 119, 0.05);
-  margin-bottom: 1px;
 }
 
 .details-card[open] summary::after {
@@ -133,7 +133,7 @@ h3 {
 }
 
 .details-card[open] {
-  animation: expandCard var(--transition-normal) ease-out;
+  animation: expandCard var(--transition-normal-t) ease-out;
 }
 
 .details-card .content {
@@ -176,52 +176,52 @@ h3 {
 }
 
 .details-card[open] .content li:nth-child(1) {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 .details-card[open] .content li:nth-child(2) {
-  transition-delay: 0.3s;
+  transition-delay: 0.15s;
 }
 .details-card[open] .content li:nth-child(3) {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 .details-card[open] .content li:nth-child(4) {
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
 .details-card[open] .content li:nth-child(5) {
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
 }
 .details-card[open] .content li:nth-child(6) {
-  transition-delay: 0.7s;
+  transition-delay: 0.35s;
 }
 .details-card[open] .content li:nth-child(7) {
-  transition-delay: 0.8s;
+  transition-delay: 0.4s;
 }
 .details-card[open] .content li:nth-child(8) {
-  transition-delay: 0.9s;
+  transition-delay: 0.45s;
 }
 .details-card[open] .content li:nth-child(9) {
-  transition-delay: 1.0s;
+  transition-delay: 0.5s;
 }
 .details-card[open] .content li:nth-child(10) {
-  transition-delay: 1.1s;
+  transition-delay: 0.55s;
 }
 .details-card[open] .content li:nth-child(11) {
-  transition-delay: 1.2s;
+  transition-delay: 0.6s;
 }
 .details-card[open] .content li:nth-child(12) {
-  transition-delay: 1.3s;
+  transition-delay: 0.65s;
 }
 .details-card[open] .content li:nth-child(13) {
-  transition-delay: 1.4s;
+  transition-delay: 0.7s;
 }
 .details-card[open] .content li:nth-child(14) {
-  transition-delay: 1.5s;
+  transition-delay: 0.75s;
 }
 .details-card[open] .content li:nth-child(15) {
-  transition-delay: 1.6s;
+  transition-delay: 0.8s;
 }
 .details-card[open] .content li:nth-child(16) {
-  transition-delay: 1.7s;
+  transition-delay: 0.85s;
 }
 
 @keyframes fadeInUp {

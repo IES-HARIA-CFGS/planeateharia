@@ -23,7 +23,7 @@
 
   /* Tamaño */
   --texto-header: 1.2rem;
-  --texto-footer: 13px;
+  --texto-footer: 0.81rem;
 
   /* Espacios */
   --spacing-mp: 0.5rem; /* Muy pequeño: 8px */
@@ -42,4 +42,9 @@
   --transition-rapido: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-despacio: 0.8s ease;
+
+  /* Tiempos */
+  --transition-rapido-t: 0.2s;
+  --transition-normal-t: 0.3s;
+  --transition-despacio-t: 0.8s;
 }

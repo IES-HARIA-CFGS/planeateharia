@@ -27,6 +27,10 @@
 
 @media (max-width: 700px) {
     
+    section {
+        padding: 30px 10px;
+    }
+
     .ciclos {
         grid-template-columns: 320px;
         grid-template-rows: auto 200px 200px 200px;

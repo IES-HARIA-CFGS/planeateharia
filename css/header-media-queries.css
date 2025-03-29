@@ -1,5 +1,5 @@
-@media (max-width: 920px){
-     /* Menú hamburguesa */
+@media (max-width: 920px) {
+  /* Menú hamburguesa */
   .header-nav {
     flex-wrap: wrap;
     position: relative;

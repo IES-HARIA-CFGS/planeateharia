@@ -5,6 +5,7 @@ main {
 /* SECCIÓN VIDEO */
 .principal {
   height: 100vh;
+  min-height: 400px;
   background-color: #f2f2f2;
 }
 
@@ -45,7 +46,7 @@ main {
   color: var(--color-secondary);
   font-size: 2rem;
   opacity: 0;
-  animation: fadeIn 2s ease-in-out 1.5s forwards;
+  animation: fadeIn var(--transition-rapido-t) ease-in-out 2s forwards;
 }
 
 @keyframes fadeIn {
@@ -73,9 +74,7 @@ main {
   text-transform: uppercase;
   position: absolute;
   opacity: 0;
-  animation: aparecer 22.5s infinite;
-  animation-fill-mode: forwards;
-  -webkit-animation: aparecer 22.5s infinite;
+  animation: aparecer 22.5s infinite 0.5s forwards;
 }
 
 /* Retrasos para cada texto secundario */
@@ -124,7 +123,7 @@ main {
 }
 
 section {
-  padding: 70px 10px;
+  padding: 40px 10px;
   width: 100%;
   color: var(--color-footer-background);
 }
@@ -197,18 +196,10 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   transition: transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  -moz-transition: transform 0.1s linear;
-  -ms-transition: transform 0.1s linear;
-  -o-transition: transform 0.1s linear;
 }
 
 .back:hover {
   transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
 }
 
 .ciclos > article > a > p {
@@ -236,7 +227,7 @@ section {
   border: 5px solid var(--color-footer-background);
   grid-column: 1;
   grid-row: 2;
-  transition: transform 0.3s ease-in-out;
+  transition: transform var(--transition-normal-t) ease-in-out;
   background-image: url("../assets/ciclos/CFGB.jpg");
   background-size: 150%;
 }
@@ -245,7 +236,7 @@ section {
   border: 5px solid var(--color-footer-background);
   grid-column: 2;
   grid-row: 2;
-  transition: transform 0.3s ease-in-out;
+  transition: transform var(--transition-normal-t) ease-in-out;
   background-image: url("../assets/ciclos/CFGM.jpg");
   background-size: 150%;
 }
@@ -254,7 +245,7 @@ section {
   border: 5px solid var(--color-footer-background);
   grid-column: 3;
   grid-row: 2;
-  transition: transform 0.3s ease-in-out;
+  transition: transform var(--transition-normal-t) ease-in-out;
   background-image: url("../assets/ciclos/CFGS.jpg");
   background-size: 150%;
 }
