@@ -31,10 +31,6 @@
         padding: 2rem 0.5rem;
     }
 
-    .dual {
-        padding: 2rem 0.5rem;
-    }
-
     .dual > article > p {
         margin: 0 0.5rem;
     }
@@ -62,6 +58,10 @@
     .ciclos-s {
         grid-column: 1;
         grid-row: 4;
+    }
+
+    .inte-info > h3 {
+        margin-top: 1rem;
     }
 
     .inte-info > ul {
