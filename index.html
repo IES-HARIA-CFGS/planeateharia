@@ -1,297 +1,234 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="IES Haría - Centro educativo en Lanzarote especializado en Formación Profesional de Informática"
-    />
-    <meta name="theme-color" content="#ff0000" />
-    <meta name="author" content="IES Haría" />
 
-    <title>IES Haría | Centro de Formación Profesional</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="IES Haría - Centro educativo en Lanzarote especializado en Formación Profesional de Informática" />
+  <meta name="theme-color" content="#ff0000" />
+  <meta name="author" content="IES Haría" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://www3.gobiernodecanarias.org/medusa/edublog/iesharia/wp-content/uploads/sites/830/2023/03/pfrqng22cxiwzgxf0qrbwyoilkvvikh1-2.png"
-    />
+  <title>IES Haría | Centro de Formación Profesional</title>
 
-    <!-- Precargar recursos críticos -->
-    <link rel="preload" href="./assets/open.mp4" as="video" type="video/mp4" />
-    <link rel="preload" href="./assets/logos/logo_ies_haria.png" as="image" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png"
+    href="https://www3.gobiernodecanarias.org/medusa/edublog/iesharia/wp-content/uploads/sites/830/2023/03/pfrqng22cxiwzgxf0qrbwyoilkvvikh1-2.png" />
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="./css/variablesYreset.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/PagPrincipal.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/header-media-queries.css" />
-    <link rel="stylesheet" href="./css/footer-media-queries.css" />
-    <link rel="stylesheet" href="./css/PagPrincipal-media-queries.css" />
+  <!-- Precargar recursos críticos -->
+  <!-- Versión móvil -->
+  <link rel="preload" href="./assets/open-mobile.mp4" as="video" type="video/mp4" media="(max-width: 768px)" />
+  <!-- Versión desktop -->
+  <link rel="preload" href="./assets/open.mp4" as="video" type="video/mp4" media="(min-width: 769px)" />
+  <link rel="preload" href="./assets/logos/logo_ies_haria.png" as="image" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/variablesYreset.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/PagPrincipal.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/header-media-queries.css" />
+  <link rel="stylesheet" href="./css/footer-media-queries.css" />
+  <link rel="stylesheet" href="./css/PagPrincipal-media-queries.css" />
 
-  <body>
-    <!-- HEADER -->
-    <header>
-      <nav class="header-nav" aria-label="Navegación principal">
-        <!-- Logo + Inicio -->
-        <div class="logo">
-          <a href="index.html" aria-label="Página de inicio">
-            <img
-              src="./assets/logos/logo_ies_haria.png"
-              alt="Logo IES Haría"
-              width="70"
-              height="50"
-            />
-            <span>IES HARÍA</span>
-          </a>
-        </div>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-        <!-- Menú hamburguesa -->
-        <input type="checkbox" id="menu-toggle" aria-hidden="true" />
-        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </label>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="header-nav" aria-label="Navegación principal">
+      <!-- Logo + Inicio -->
+      <div class="logo">
+        <a href="index.html" aria-label="Página de inicio">
+          <img src="./assets/logos/logo_ies_haria.png" alt="Logo IES Haría" width="70" height="50" />
+          <span>IES HARÍA</span>
+        </a>
+      </div>
 
-        <!-- Enlaces de navegación -->
-        <ul class="menu" role="menubar">
-          <li role="none"><a href="#ciclos" role="menuitem">Ciclos</a></li>
-          <li role="none">
-            <a href="./html/proyectos.html" role="menuitem">Proyectos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- MAIN -->
-    <main>
-      <!-- video introductorio como background -->
-      <section class="principal">
-        <video
-          id="background-video"
-          autoplay
-          muted
-          loop
-          playsinline
-          class="background-video"
-          preload="auto"
-        >
-          <source src="./assets/open.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2" />
-          Tu navegador no soporta el elemento video.
-        </video>
-        <div class="overlay">
-          <h2>APRENDE</h2>
-          <!-- Textos animados -->
-          <div class="texto-bienvenida-p" aria-label="Áreas de especialización">
-            <span>Seguridad Informática</span>
-            <span>Mantenimiento de Equipos</span>
-            <span>Gestión de Redes</span>
-            <span>Desarrollo de Apps</span>
-            <span>Virtualización Avanzada</span>
-            <span>Inteligencia Artificial</span>
-            <span>Gestión de Bases Datos</span>
-            <span>Cableado Estructurado</span>
-            <span>Control de Versiones</span>
-          </div>
-        </div>
-      </section>
+      <!-- Menú hamburguesa -->
+      <input type="checkbox" id="menu-toggle" aria-hidden="true" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
 
-      <!-- Sección FP Dual -->
-      <section class="dual">
-        <article>
-          <h2>FP DUAL</h2>
-          <p>
-            La Formación Profesional Dual (FP Dual) es una modalidad de
-            Formación Profesional que combina la formación teórica en el centro
-            educativo con la formación práctica en una empresa u organismo
-            equiparado. Esta modalidad permite al estudiante obtener una
-            formación más ajustada a las necesidades reales del mercado laboral,
-            ya que combina la teoría con la práctica en un entorno real de
-            trabajo.
-          </p>
-        </article>
-        <article class="inte-info">
-          <h3>Información de interés</h3>
-          <ul>
-            <li><i class="fa-solid fa-clock"></i> Horario de Mañana</li>
-            <li><i class="fa-solid fa-bus"></i> Transporte Escolar</li>
-            <li><i class="fa-solid fa-building"></i> Residencia</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- Sección Ciclos Formativos -->
-      <section class="ciclos" id="ciclos">
-        <article class="titulo-ciclos">
-          <h2>CICLOS FORMATIVOS</h2>
-        </article>
-
-        <article class="ciclos-b back">
-          <a href="./html/CFGB.html">
-            <h2>CFGB</h2>
-            <p>Informática y Comunicaciones</p>
-          </a>
-        </article>
-
-        <article class="ciclos-m back">
-          <a href="./html/CFGM.html">
-            <h2>CFGM</h2>
-            <p>Sistemas Microinformáticos y Redes</p>
-          </a>
-        </article>
-
-        <article class="ciclos-s back">
-          <a href="./html/CFGS.html">
-            <h2>CFGS</h2>
-            <p>Desarrollo de Aplicaciones Multiplataforma</p>
-          </a>
-        </article>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-principal">
-        <!-- Ubicación -->
-        <div class="f-div-1 fila1">
-          <h3>¿Dónde estamos?</h3>
-          <p>
-            Puedes encontrarnos en:<br /><a
-              href="https://www.google.com/maps/dir/IES+de+Haría,+C.+Santiago+Noda,+4,+35520+Haría,+Las+Palmas/C.+Santiago+Noda,+4,+35520+Haría,+Las+Palmas/@29.1413531,-13.5057821,18.75z/data=!3m1!5s0xc48a0571f104d15:0xe06e5df834be0e0a!4m13!4m12!1m5!1m1!1s0xc48a057186e0aaf:0xc45fed53018ff0fd!2m2!1d-13.5067877!2d29.142204!1m5!1m1!1s0xc48a057186e0aaf:0xc45fed53018ff0fd!2m2!1d-13.5067877!2d29.142204?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              >C. Santiago Noda, 4, 35520 Haría</a
-            >
-          </p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1036.0345755177286!2d-13.505782134524758!3d29.141353125755366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xc48a057186e0aaf%3A0xc45fed53018ff0fd!2sIES%20de%20Har%C3%ADa%2C%20C.%20Santiago%20Noda%2C%204%2C%2035520%20Har%C3%ADa%2C%20Las%20Palmas!3m2!1d29.142204!2d-13.506787699999999!4m5!1s0xc48a057186e0aaf%3A0xc45fed53018ff0fd!2sC.%20Santiago%20Noda%2C%204%2C%2035520%20Har%C3%ADa%2C%20Las%20Palmas!3m2!1d29.142204!2d-13.506787699999999!5e0!3m2!1ses!2ses!4v1742917117328!5m2!1ses!2ses"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-
-        <!-- Contacto -->
-        <div class="f-div-2 fila1">
-          <h3>Contáctanos:</h3>
-          <nav aria-label="Información de contacto">
-            <ul class="contact">
-              <li>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:928303014" target="_blank">928 30 30 14</a> /
-                <a href="tel:928303011" target="_blank">928 30 30 11</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:35009206@gobiernodecanarias.org" target="_blank"
-                  >35009206@gobiernodecanarias.org</a
-                >
-              </li>
-            </ul>
-            <p>Para más información:</p>
-            <ul class="social">
-              <li>
-                <a
-                  href="https://www.facebook.com/people/La-Palmera-Ies-Haría/pfbid02DiUy8q5fUnEoFSiZMALU7AbU9vM5HeppqQyCB1huACvdQcNXpGqX1emuY46p5hZel/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Facebook IES Haría"
-                  ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/lapalmera_iesharia/?hl=es"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Instagram IES Haría"
-                  ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www3.gobiernodecanarias.org/medusa/edublog/iesharia/"
-                  class="sinlinea"
-                  target="_blank"
-                  rel="noopener"
-                  >IES Haría</a
-                >
-              </li>
-            </ul>
-            <p class="hid-firm">"Si funciona, no lo toques" – 1º CFGS DAM (24-25) 😆</p>
-          </nav>
-        </div>
-
-        <!-- Enlaces legales -->
-        <div class="f-div-3 fila1">
-          <a
-            href="https://www.gobiernodecanarias.org/principal"
-            target="_blank"
-            rel="noopener"
-            ><img
-              src="./assets/logos/gobierno-canarias.png"
-              alt="Gobierno de Canarias"
-          /></a>
-
-          <nav aria-label="Enlaces legales">
-            <ul class="legal">
-              <li>
-                <a
-                  href="https://www.gobiernodecanarias.org/principal/avisolegal.html"
-                  target="_blank"
-                  rel="noopener"
-                  >Aviso Legal</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.gobiernodecanarias.org/eucd/politica_privacidad"
-                  target="_blank"
-                  rel="noopener"
-                  >Política de privacidad</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.gobiernodecanarias.org/principal/sugerenciasyreclamaciones"
-                  target="_blank"
-                  rel="noopener"
-                  >Sugerencias y reclamaciones</a
-                >
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a
-                  href="https://www.gobiernodecanarias.org/principal"
-                  class="sinlinea"
-                  target="_blank"
-                  rel="noopener"
-                  >&copy; Gobierno de Canarias</a
-                >
-              </li>
-            </ul>
-            <p class="vemos-firma">"Si funciona, no lo toques" – 1º CFGS DAM (24-25) 😆</p>
-          </nav>
+      <!-- Enlaces de navegación -->
+      <ul class="menu" role="menubar">
+        <li role="none"><a href="#ciclos" role="menuitem">Ciclos</a></li>
+        <li role="none">
+          <a href="./html/proyectos.html" role="menuitem">Proyectos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <!-- video introductorio como background -->
+    <section class="principal">
+      <video id="background-video" autoplay muted loop playsinline class="background-video" preload="metadata" aria-label="Video de fondo" loading="lazy">
+        <!-- Versión móvil -->
+        <source src="./assets/open-mobile.mp4" type="video/mp4" media="(max-width: 768px)" codecs="avc1.42E01E, mp4a.40.2" />
+        <!-- Versión desktop -->
+        <source src="./assets/open.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2" />
+        Tu navegador no soporta el elemento video.
+      </video>
+      <div class="overlay">
+        <h2>APRENDE</h2>
+        <!-- Textos animados -->
+        <div class="texto-bienvenida-p" aria-label="Áreas de especialización">
+          <span>Seguridad Informática</span>
+          <span>Mantenimiento de Equipos</span>
+          <span>Gestión de Redes</span>
+          <span>Desarrollo de Apps</span>
+          <span>Virtualización Avanzada</span>
+          <span>Inteligencia Artificial</span>
+          <span>Gestión de Bases Datos</span>
+          <span>Cableado Estructurado</span>
+          <span>Control de Versiones</span>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- Sección FP Dual -->
+    <section class="dual">
+      <article>
+        <h2>FP DUAL</h2>
+        <p>
+          La Formación Profesional Dual (FP Dual) es una modalidad de
+          Formación Profesional que combina la formación teórica en el centro
+          educativo con la formación práctica en una empresa u organismo
+          equiparado. Esta modalidad permite al estudiante obtener una
+          formación más ajustada a las necesidades reales del mercado laboral,
+          ya que combina la teoría con la práctica en un entorno real de
+          trabajo.
+        </p>
+      </article>
+      <article class="inte-info">
+        <h3>Información de interés</h3>
+        <ul>
+          <li><i class="fa-solid fa-clock"></i> Horario de Mañana</li>
+          <li><i class="fa-solid fa-bus"></i> Transporte Escolar</li>
+          <li><i class="fa-solid fa-building"></i> Residencia</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Sección Ciclos Formativos -->
+    <section class="ciclos" id="ciclos">
+      <article class="titulo-ciclos">
+        <h2>CICLOS FORMATIVOS</h2>
+      </article>
+
+      <article class="ciclos-b back">
+        <a href="./html/CFGB.html">
+          <h2>CFGB</h2>
+          <p>Informática y Comunicaciones</p>
+        </a>
+      </article>
+
+      <article class="ciclos-m back">
+        <a href="./html/CFGM.html">
+          <h2>CFGM</h2>
+          <p>Sistemas Microinformáticos y Redes</p>
+        </a>
+      </article>
+
+      <article class="ciclos-s back">
+        <a href="./html/CFGS.html">
+          <h2>CFGS</h2>
+          <p>Desarrollo de Aplicaciones Multiplataforma</p>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-principal">
+      <!-- Ubicación -->
+      <div class="f-div-1 fila1">
+        <h3>¿Dónde estamos?</h3>
+        <p>
+          Puedes encontrarnos en:<br /><a
+            href="https://www.google.com/maps/dir/IES+de+Haría,+C.+Santiago+Noda,+4,+35520+Haría,+Las+Palmas/C.+Santiago+Noda,+4,+35520+Haría,+Las+Palmas/@29.1413531,-13.5057821,18.75z/data=!3m1!5s0xc48a0571f104d15:0xe06e5df834be0e0a!4m13!4m12!1m5!1m1!1s0xc48a057186e0aaf:0xc45fed53018ff0fd!2m2!1d-13.5067877!2d29.142204!1m5!1m1!1s0xc48a057186e0aaf:0xc45fed53018ff0fd!2m2!1d-13.5067877!2d29.142204?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D"
+            target="_blank">C. Santiago Noda, 4, 35520 Haría</a>
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1036.0345755177286!2d-13.505782134524758!3d29.141353125755366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xc48a057186e0aaf%3A0xc45fed53018ff0fd!2sIES%20de%20Har%C3%ADa%2C%20C.%20Santiago%20Noda%2C%204%2C%2035520%20Har%C3%ADa%2C%20Las%20Palmas!3m2!1d29.142204!2d-13.506787699999999!4m5!1s0xc48a057186e0aaf%3A0xc45fed53018ff0fd!2sC.%20Santiago%20Noda%2C%204%2C%2035520%20Har%C3%ADa%2C%20Las%20Palmas!3m2!1d29.142204!2d-13.506787699999999!5e0!3m2!1ses!2ses!4v1742917117328!5m2!1ses!2ses"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Contacto -->
+      <div class="f-div-2 fila1">
+        <h3>Contáctanos:</h3>
+        <nav aria-label="Información de contacto">
+          <ul class="contact">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:928303014" target="_blank">928 30 30 14</a> /
+              <a href="tel:928303011" target="_blank">928 30 30 11</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:35009206@gobiernodecanarias.org" target="_blank">35009206@gobiernodecanarias.org</a>
+            </li>
+          </ul>
+          <p>Para más información:</p>
+          <ul class="social">
+            <li>
+              <a href="https://www.facebook.com/people/La-Palmera-Ies-Haría/pfbid02DiUy8q5fUnEoFSiZMALU7AbU9vM5HeppqQyCB1huACvdQcNXpGqX1emuY46p5hZel/"
+                target="_blank" rel="noopener" aria-label="Facebook IES Haría"><i class="fa-brands fa-facebook-f"
+                  aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/lapalmera_iesharia/?hl=es" target="_blank" rel="noopener"
+                aria-label="Instagram IES Haría"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www3.gobiernodecanarias.org/medusa/edublog/iesharia/" class="sinlinea" target="_blank"
+                rel="noopener">IES Haría</a>
+            </li>
+          </ul>
+          <p class="hid-firm">"Si funciona, no lo toques" – 1º CFGS DAM (24-25) 😆</p>
+        </nav>
+      </div>
+
+      <!-- Enlaces legales -->
+      <div class="f-div-3 fila1">
+        <a href="https://www.gobiernodecanarias.org/principal" target="_blank" rel="noopener"><img
+            src="./assets/logos/gobierno-canarias.png" alt="Gobierno de Canarias" /></a>
+
+        <nav aria-label="Enlaces legales">
+          <ul class="legal">
+            <li>
+              <a href="https://www.gobiernodecanarias.org/principal/avisolegal.html" target="_blank"
+                rel="noopener">Aviso Legal</a>
+            </li>
+            <li>
+              <a href="https://www.gobiernodecanarias.org/eucd/politica_privacidad" target="_blank"
+                rel="noopener">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="https://www.gobiernodecanarias.org/principal/sugerenciasyreclamaciones" target="_blank"
+                rel="noopener">Sugerencias y reclamaciones</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://www.gobiernodecanarias.org/principal" class="sinlinea" target="_blank"
+                rel="noopener">&copy; Gobierno de Canarias</a>
+            </li>
+          </ul>
+          <p class="vemos-firma">"Si funciona, no lo toques" – 1º CFGS DAM (24-25) 😆</p>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
