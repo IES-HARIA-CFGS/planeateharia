@@ -2,7 +2,6 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.6;
-  margin-top: 60px;
   font-family: var(--fuente-principal);
 }
 
